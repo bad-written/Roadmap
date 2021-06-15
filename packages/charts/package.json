@@ -1,14 +1,21 @@
 {
-  "name": "@sunday/commons",
+  "name": "@sunday/charts",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "src",
-    "dist/"
+    "dist"
   ],
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bad-written/roadmap.git"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "watch": "yarn build:dev",
@@ -16,8 +23,8 @@
     "build:dev": "cross-env NODE_ENV=development rollup -cw",
     "build:prod": "cross-env NODE_ENV=production rollup -c"
   },
-  "dependencies": {
-    "@sunday/utils": "^1.0.0",
-    "@sunday/rollup": "^1.0.0"
+  "devDependencies": {
+    "@sunday/rollup": "^1.0.0",
+    "@sunday/utils": "^1.0.0"
   }
 }

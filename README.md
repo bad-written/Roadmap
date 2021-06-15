@@ -7,7 +7,7 @@ A sunday kit for building modern JavaScript projects.
 Monorepo is awesome. If you want to know more, please visit this [awesome repo](https://github.com/korfuri/awesome-monorepo). In this sunday, we have below projects:
 
 ```
-├── commons
+├── charts
 ├── components
 ├── rollup
 ├── tickets
@@ -21,7 +21,6 @@ graph TD;
   utils --> rollup;
   commons --> rollup;
   components --> rollup;
-  commons --> utils;
   components --> utils;
   components --> commons;
   tickets --> commons;
