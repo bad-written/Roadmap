@@ -32,7 +32,7 @@ module.exports = dest => {
       builds.forEach((build, i) => {
         const filename = keys[i];
         const filepath = path.join(os.tmpdir(), filename);
-        fs.outputFileSync(filepath, build.code);
+        fs.outputFileSync(filepath, build.code || ``);
 
         const size = `${placeholder(`size`)} ${getFilesize(filepath)}`;
         const gzip = ` | ${placeholder(`gzip`)} ${getGzipSize(filepath)}`;

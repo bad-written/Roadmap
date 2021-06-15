@@ -9,6 +9,13 @@
     "src",
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bad-written/roadmap.git"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "watch": "yarn build:dev",
