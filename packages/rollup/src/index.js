@@ -60,7 +60,8 @@ const createOutput = (dir = `dist`, defaultOpts) => {
     replace({
       "process.env.NODE_ENV": JSON.stringify(
         isProduction ? `production` : `development`
-      )
+      ),
+      preventAssignment: true
     }),
     postcss({
       plugins: [autoprefixer()],
